@@ -3003,7 +3003,7 @@ client.on('guildMemberAdd', member => {
                   .addField("Name:",`<@` + `${member.id}` + `>`, true)
                       
                                      .addField(' Server', `${member.guild.name}`,true)
-.setFooter(member.user.username,'https://images-ext-2.discordapp.net/external/JpyzxW2wMRG2874gSTdNTpC_q9AHl8x8V4SMmtRtlVk/https/orcid.org/sites/default/files/files/ID_symbol_B-W_128x128.gif')  
+.setFooter(member.user.username,'https://cdn.discordapp.com/attachments/550596804501045249/550653464523571210/gagh.png')  
 
                                        
         .setTimestamp()
@@ -3040,7 +3040,7 @@ if(!men) return  eyad.channel.send(":black_medium_square:**قم بوضع ايد�
     var nnn = message.createReactionCollector(nn, { time: 60000 });
 kkk.on("collect", r => {
           const embed = new Discord.RichEmbed()
-               .setThumbnail("https://cdn.discordapp.com/attachments/429056808561278979/450412294078332948/download.jpg")   
+               .setThumbnail("https://cdn.discordapp.com/attachments/550596804501045249/550653464523571210/gagh.png")   
                .setColor("RANDOM")
                .addField('**• السلام عليكم ** ', `<@${men.id}>` , true)
                     .addField('**• لقد قام شخص ما بمصارحتك **' ,       ` __${args}__ ` , true)
