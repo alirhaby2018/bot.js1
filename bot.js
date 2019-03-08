@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
-const devs = ['389090790984515594'];
+const devs = ['543363632159784961'];
 const db = require('quick.db');
-const premium = ['470896018603376640']
+const premium = ['543363632159784961']
 const client = new Discord.Client();   
 const bot = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['ahelp','Type ahelp'];
+    var setGame = ['#help','Type #help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -370,7 +370,7 @@ client.on('message', msg => {
         msg.reply(`Error: ${err}`);
     }
     
-    const embed = new Discord.RichEmbed()
+    const embed = new Discord.RichEmbed()w
     .addField("**Input**: ",`**${question}**`, true)
     .addField("**Output**: ",`**${answer}**`, true)
     msg.channel.send(embed)  .catch(console.error);
@@ -1894,23 +1894,23 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=553611447805018122&permissions=0&scope=bot')
   .setDescription(`**
   New Server Add 3bker Community © ?
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("474127377245667328").sendEmbed(embed)
+client.channels.get("543363632159784961").sendEmbed(embed)
 });
 client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
+     .setURL('https://discordapp.com/api/oauth2/authorize?client_id=553611447805018122&permissions=0&scope=bot')
   .setDescription(`**
   Server Kicked 3bker Community © :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("474127377245667328").sendEmbed(embed)
+client.channels.get("543363632159784961").sendEmbed(embed)
 });
 var type = [
     {
@@ -2367,7 +2367,7 @@ var al7arthyCodes2 = ["??__60%__  **|**  ??__40%__","??__63%__  **|**  ??__37%__
 client.on('message', message => {
     if(!message.guild) return;
     if (message.author.bot) return;
-      let id = message.author.id,prefix="a";//البريفكس
+      let id = message.author.id,prefix="#";//البريفكس
       if (ti[id] && (new Date).getTime() - ti[id] < 20*1000) {
           let r = (new Date).getTime() - ti[id];
           r = 20*1000 - r;
@@ -2924,7 +2924,7 @@ ${prefix}queue ? لمعرفة قآئمة التشغيل
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('G.users')){
- if(!message.author.id === '434263373077544961') return;
+ if(!message.author.id === '543363632159784961') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -2935,37 +2935,37 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id == 410835593451405312) return;
+  if (message.author.id == 543363632159784961) return;
 
 
 if (message.content.startsWith(prefix + 'playing')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '543363632159784961') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
 } else
 
 if (message.content.startsWith(prefix + 'streem')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '543363632159784961') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
     message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
 } else
 
 if (message.content.startsWith(prefix + 'setname')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '543363632159784961') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
   client.user.setUsername(argresult).then
       message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
   return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
 } else
 
 if (message.content.startsWith(prefix + 'setavatar')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '543363632159784961') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setAvatar(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
 } else
 
 
 if (message.content.startsWith(prefix + 'watching')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '543363632159784961') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
     client.user.setActivity(argresult, {type : 'watching'});
  message.channel.sendMessage(`**${argresult}** : تم تغيير الووتشينق الى`)
 }
