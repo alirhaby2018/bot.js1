@@ -3040,7 +3040,7 @@ if(!men) return  eyad.channel.send(":black_medium_square:**قم بوضع ايد�
     var nnn = message.createReactionCollector(nn, { time: 60000 });
 kkk.on("collect", r => {
           const embed = new Discord.RichEmbed()
-               .setThumbnail("https://cdn.discordapp.com/attachments/550596804501045249/550653464523571210/gagh.png")   
+               .setThumbnail("https://cdn.discordapp.com/attachments/429056808561278979/450412294078332948/download.jpg")   
                .setColor("RANDOM")
                .addField('**• السلام عليكم ** ', `<@${men.id}>` , true)
                     .addField('**• لقد قام شخص ما بمصارحتك **' ,       ` __${args}__ ` , true)
